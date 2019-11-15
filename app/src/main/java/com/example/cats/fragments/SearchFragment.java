@@ -44,25 +44,7 @@ public class SearchFragment extends Fragment {
     private RecyclerView recyclerView;
     ImageButton searchButton;
     EditText searchText;
-//    DataPassListener mCallback;
-//
-//    public interface DataPassListener{
-//        public void passData(String data);
-//    }
 
-//    @Override
-//    public void onAttach(Context context)
-//    {
-//        super.onAttach(context);
-//        try
-//        {
-//            mCallback = (DataPassListener) context;
-//        }
-//        catch (ClassCastException e)
-//        {
-//            throw new ClassCastException(context.toString()+ " must implement OnImageClickListener");
-//        }
-//    }
 
     @Nullable
     @Override

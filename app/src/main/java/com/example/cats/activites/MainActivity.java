@@ -24,27 +24,12 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class MainActivity extends AppCompatActivity{
 
     BottomNavigationView bottomNavigationView;
-//    ImageButton searchButton;
-//    EditText searchText;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-//        searchButton = (ImageButton) findViewById(R.id.searchButton);
-//        searchText = (EditText) (findViewById(R.id.search));
-
-
-//        searchButton.setOnClickListener(new View.OnClickListener()
-//                {
-//                    public void onClick(View view) {
-//                        String searchResult = searchText.getText().toString();
-//                    }
-//                });
-
-//        gets the string inputted and which is used to filter users search
-
 
 
         Fragment fragment = new SearchFragment();

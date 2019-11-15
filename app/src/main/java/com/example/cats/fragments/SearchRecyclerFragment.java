@@ -50,8 +50,7 @@ public class SearchRecyclerFragment extends Fragment {
 
         final SearchAdapter searchAdapter = new SearchAdapter();
         final RequestQueue requestQueue =  Volley.newRequestQueue(getActivity());
-//        String searchTextPass = getArguments().getString("SearchedText");
-        String searchTextPass= getPrefs("SearchedText");
+        String searchTextPass= getPrefs("SearchedText", getContext());
         System.out.println(searchTextPass+"here is the string");
 
         String url = "https://api.thecatapi.com/v1/breeds"+ "/search?q="+ searchTextPass;
@@ -117,7 +116,7 @@ public class SearchRecyclerFragment extends Fragment {
         super.onResume();
     }
 
-    public static String getPrefs(String key) {
+    public static String getPrefs(String key, Context context) {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
         return sharedPreferences.getString(key, "");
     }
